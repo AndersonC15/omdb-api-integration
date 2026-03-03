@@ -1,7 +1,6 @@
 package com.AndersonC15.screenmatch.service;
 
 
-import com.aluracursos.screenmatch.model.DatosSerie;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

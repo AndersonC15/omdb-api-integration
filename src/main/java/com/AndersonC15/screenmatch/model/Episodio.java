@@ -2,6 +2,7 @@ package com.AndersonC15.screenmatch.model;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
+import java.util.Scanner;
 
 public class Episodio {
     private Integer temporada;
@@ -76,4 +77,5 @@ public class Episodio {
                         ", evaluacion=" + evaluacion +
                         ", fechaDeLanzamiento=" + fechaDeLanzamiento;
     }
+
 }
