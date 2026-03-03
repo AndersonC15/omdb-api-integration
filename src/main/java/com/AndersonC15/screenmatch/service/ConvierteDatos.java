@@ -1,16 +1,17 @@
 package com.AndersonC15.screenmatch.service;
 
-import com.AndersonC15.screenmatch.model.DatosSerie;
+
+import com.aluracursos.screenmatch.model.DatosSerie;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class ConvertirDatos implements IConvierteDatos{
+public class ConvierteDatos implements IConvierteDatos {
     private ObjectMapper objectMapper = new ObjectMapper();
 
     @Override
     public <T> T obtenerDatos(String json, Class<T> clase) {
         try {
-            return objectMapper.readValue(json, clase);
+            return objectMapper.readValue(json,clase);
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
